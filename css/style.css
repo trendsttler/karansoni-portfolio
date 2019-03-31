@@ -38,6 +38,7 @@ section.section{
 }
 .admin-detail{
     text-align:center;
+    margin-bottom:1rem;
 }
 .admin-detail h1 {
     font-size: 60px;
@@ -61,4 +62,89 @@ section.section{
     line-height: 26px;
     color: #313131;
     font-weight: 600;
+}
+
+.social-links{
+    padding: 10px ;
+    text-align: center;
+    color: #333;
+    font-size:18px;
+}
+.social-links .social{
+    border: 2px solid #333;
+    border-radius: 40px;
+    margin: 0 10px;
+    min-height: 30px;
+    min-width: 30px;
+    display: inline-block;
+    text-align: center;
+}
+.social.si-f:hover{
+    color: #3b5998;
+    border-color:#3b5998;
+}
+.social.si-i:hover{
+    color:#fbad50 ;
+    border-color:#bc2a8d;
+}
+.social.si-t:hover{
+    Color: #1da1f2; 
+    border-color: #1da1f2;
+
+}
+.social.si-li:hover{
+    color:#0077B5;
+    border-color: #0077B5;
+}
+
+
+.contact-me{
+    margin-bottom: 1rem;
+}
+.btn-contact{
+    border-radius: 0;
+    background-color: transparent;
+    border:1px solid #333;
+    font-size:18px;
+    padding: 5px 30px;
+    min-width: 250px;
+    font-weight: 500;
+    color:#333;
+    transition: .5s ease-in-out;
+    background: transparent;
+    position: relative;
+
+    }
+    .btn-contact span{
+        position: relative;
+        z-index: 4;
+    }
+.btn-contact:hover { 
+      color:white;
+    transition: .5s ease-in-out;
+}
+
+
+.btn-contact::before,
+.btn-contact::after{
+    content: "";
+    background:#333;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.btn-contact::after{
+    left: 0;
+    right: auto;
+}
+.btn-contact:hover::before{
+    transition: .5s ease-in-out;
+    width: 100%;
+}
+.btn-contact:hover::after{
+    width: 100%;
+    transition: .5s ease-in-out;
 }
